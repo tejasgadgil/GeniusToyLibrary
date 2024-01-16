@@ -8,5 +8,10 @@ def home(request):
 def about_us(request):
     return render(request,'library/aboutUs.html')
 
+def contact_us(request):
+    return render(request,'library/contactUs.html')
+
+def t_and_c(request):
+    return render(request,'library/termsAndConditions.html')
 
 
