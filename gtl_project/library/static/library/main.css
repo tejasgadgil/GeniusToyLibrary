@@ -1,163 +1,189 @@
-header
-        {
-            /* #ff63a9 */
-            background-color:#ffffff ;
-            height: 70px;
-            width: 100%;
-            color: #4b4b4b;
-            border-bottom: 1px solid #b3b5b8;
-        }
+    header
+    {
+        /* #ff63a9 */
+        width: 100%;
+        color: #4b4b4b;
+        border-bottom: 1px solid #b3b5b8;
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+    }
 
 
-        body
-        {
-            margin: 0px;
-            padding: 0px;
-            font-family: Arial, sans-serif;
-            
-        }
+    body
+    {
+        margin: 0px;
+        padding: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
 
-        .content 
-        {
-            background-color: #ffffff;
-            overflow-x: hidden;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-        }
+    .content 
+    {
+        background-color: #ffffff;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
 
-        .header-logo
-        {
-            margin-left: 20px;
-            margin-top: 12px;
-        }
+    .header-logo
+    {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
 
-        footer
-        {
-            background-color: #333333;
-            color: white;
-            padding: 10px;
-            bottom: 0;
-            width: 100%;
-            position:sticky;
-            display:flex;
-            flex-direction: column;
-        }
-
-
-        .header-buttons-box
-        {
-            margin-right: 20px;
-            margin-left: 560px;
-            margin-top:25px;
-            justify-self: right;
-        }
+    footer
+    {
+        background-color: #333333;
+        color: white;
+        padding: 10px;
+        bottom: 0;
+        width: 100%;
+        position:sticky;
+        display:flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
 
 
-        .header-buttons
-        {
-            margin-left: 10px;
-            background-color: transparent;
-            color: #a83dd2;
-            font-weight: bold;
-            font-size:14px;
-            border: 0ch;
-        }
-        .header-buttons:hover
-        {
-            transition: 0.4s;
-            color:#333333;
-        }
-
-        /* Styling for the first navbar (Black) */
-.first-navbar {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.first-navbar img {
-    max-height: 40px; /* Adjust the height as needed */
-}
-
-.first-navbar-middle {
-    flex: 1; /* Takes up remaining space */
-    text-align: center;
-}
-
-.first-navbar-right a {
-    color: white; /* Adjust text color as needed */
-    margin-left: 10px; /* Add spacing between links */
-}
-
-/* Styling for the second navbar */
-.second-navbar {
-    background-color: lightgray; /* Adjust the background color as needed */
-}
-
-.header-navbar-links-box {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.header-navbar-links {
-    display: inline-block;
-    margin-right: 10px; /* Add spacing between links */
-}
-
-.header-navbar-links a {
-    text-decoration: none;
-    color: black; /* Adjust text color as needed */
-}
+    .header-buttons-box
+    {
+        margin-right: 20px;
+        margin-left: 560px;
+        margin-top:25px;
+        justify-self: right;
+    }
 
 
+    .header-buttons
+    {
+        margin-left: 10px;
+        background-color: transparent;
+        color: #a83dd2;
+        font-weight: bold;
+        font-size:14px;
+        border: 0ch;
+    }
+    .header-buttons:hover
+    {
+        transition: 0.4s;
+        color:#333333;
+    }
 
-/*        
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+    /* Styling for the first navbar */
+    .first-navbar {
+        background-color: #ffbad9;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .first-navbar img {
+        height: 40px; /* Adjust the height as needed */
+    }
+
+    .first-navbar-middle {
+        flex: 1; /* Takes up remaining space */
+        text-align: center;
+    }
+    .first-navbar-middle input
+    {
+        border-radius: 5px;
+        width: 500px;
+        border: #b3b5b8;
+    }
+    .first-navbar-right/*delete later*/
+    {
+        margin-right: 16px;
+    }
+
+    .first-navbar-right a {
+        color: #a83dd2;
+        font-weight: bold; /* Adjust text color as needed */
+        margin-left: 12px; /* Add spacing between links */
+    }
 
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-}
+    /* Styling for the second navbar */
+    .second-navbar 
+    {
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex:1;
+    }
+
+    .second-navbar-links
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .second-navbar-links a
+    {
+        color: #333333;
+        font-weight: 550;
+        font-size: 15px;
+    }
+
+    .container
+    {
+        background-color: aquamarine;
+        margin-top: 50px;
+        width: 100%;
+    }
 
 
-.header-logo {
-    max-width: 100px; 
-}
 
 
-.header-navbar-box {
-    margin-left: auto;
-}
+    /*        
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 
 
-.header-navbar-links-box {
-    display: flex;
-    gap: 20px;
-}
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+    }
 
 
-.header-navbar-links {
-    font-size: 16px;
-}
+    .header-logo {
+        max-width: 100px; 
+    }
 
 
-.header-navbar-links a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-}
+    .header-navbar-box {
+        margin-left: auto;
+    }
 
 
-.header-navbar-links a:hover {
-    color: #ffd700; 
-} */
+    .header-navbar-links-box {
+        display: flex;
+        gap: 20px;
+    }
+
+
+    .header-navbar-links {
+        font-size: 16px;
+    }
+
+
+    .header-navbar-links a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+
+    .header-navbar-links a:hover {
+        color: #ffd700; 
+    } */
