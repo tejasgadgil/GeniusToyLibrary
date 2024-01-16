@@ -13,7 +13,7 @@
 
 <body>
     <div class="content">
-        <header>
+        
 
             <header>
                 <!-- First Navbar (Black) -->
@@ -44,18 +44,17 @@
             
                 <!-- Second Navbar -->
                 <div class="second-navbar">
-                    <ul class="header-navbar-links-box">
-                        <li class="header-navbar-links"><a href="#">HOME</a></li>
-                        <li class="header-navbar-links"><a href="#">ABOUT US</a></li>
-                        <li class="header-navbar-links"><a href="#">MEMBERSHIP PLANS</a></li>
-                        <li class="header-navbar-links"><a href="#">PRODUCTS</a></li>
-                        <li class="header-navbar-links"><a href="#">CONTACT US</a></li>
-                    </ul>
+                    <a href="{%url 'gtl-home'%}">HOME</a>
+                    <a href="{%url 'gtl-aboutUs'%}">ABOUT US</a>
+                    <a href="#">MEMBERSHIP PLANS</a>
+                    <a href="#">PRODUCTS</a>
+                    <a href="{%url 'gtl-contactUs'%}">CONTACT US</a>
+    
                 </div>
             </header>
             
 
-        </header>
+        
 
         <div class="container">
             {% block content %}{% endblock %}
@@ -73,9 +72,9 @@
                 <div style="margin-left: 180px;">
                     <div>
                         <p>Quick Links</p>
-                        <p>Terms & Conditions</p>
-                        <p>About Us</p>
-                        <p>Contact Us</p>
+                        <p><a href="{%url 'gtl-t&c'%}">Terms & Conditions </a> </p>
+                        <p><a href="{%url 'gtl-aboutUs'%}">About Us</a></p>
+                        <p><a href="{%url 'gtl-contactUs'%}">Contact Us</a></p>
                     </div>
                 </div>
 
