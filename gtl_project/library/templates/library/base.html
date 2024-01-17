@@ -17,9 +17,9 @@
 
             <header>
                 <!-- First Navbar (Black) -->
-                <div class="first-navbar">
+                <div class="first-navbar" id="top-button-goes-here">
                     <div class="first-navbar-left">
-                        <img class="header-logo" src="{% static 'library/images/image.png' %}">
+                        <a href="{%url 'gtl-home'%}"><img class="header-logo" src="{% static 'library/images/image.png' %}"></a>
                         
                     </div>
                     <div class="first-navbar-middle">
@@ -57,15 +57,21 @@
 
         
 
-        <div class="container">
+        <div class="container" id="container" >
             {% block content %}{% endblock %}
+        </div>
+
+        <!-- fixed button -->
+        <div id="fixed-button">
+            <a href="#top-button-goes-here"><button class="go-top">Top</button></a>
+            
         </div>
 
         <footer>
             <div style="display: flex;flex-direction:row;">
 
                 <div style="margin-left: 250px;">
-                    <img class="header-logo" src="{% static 'library/images/image.png' %}">
+                    <a href="{%url 'gtl-home'%}"><img class="header-logo" src="{% static 'library/images/image.png' %}"></a>
                     <p style="color: #ffffff;">Phone: +0000000000</p>
                     <p>Email: info@geniustoylibrary.com</p>
                 </div>
