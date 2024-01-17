@@ -138,52 +138,11 @@
         width: 100%;
     }
 
+    #fixed-button {
+        position: fixed;
+        bottom: 4px;
+        right: 10px;
+        z-index: 99;
+      }
 
 
-
-    /*        
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-
-    header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 20px;
-    }
-
-
-    .header-logo {
-        max-width: 100px; 
-    }
-
-
-    .header-navbar-box {
-        margin-left: auto;
-    }
-
-
-    .header-navbar-links-box {
-        display: flex;
-        gap: 20px;
-    }
-
-
-    .header-navbar-links {
-        font-size: 16px;
-    }
-
-
-    .header-navbar-links a {
-        text-decoration: none;
-        color: #fff;
-        transition: color 0.3s ease;
-    }
-
-
-    .header-navbar-links a:hover {
-        color: #ffd700; 
-    } */
