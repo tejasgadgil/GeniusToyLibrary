@@ -1,0 +1,69 @@
+{% extends "library/base.html" %}
+{% block content %}
+
+<div >
+    <table>
+        <tr>
+            <th>#</th>
+            <th>PLAN</th>
+            <th>NO OF TOYS PER DELIVERY</th>
+            <th>NO OF BOOKS PER DELIVERY</th>
+            <th>NO OF DELIVERIES PER MONTH</th>
+            <th>DURATION</th>
+            <th>AMOUNT</th>
+            <th>DEPOSIT</th>
+            <th>SUBSCRIBE</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>4D-1T1B</td>
+            <td>1 Toy/s</td>
+            <td>1 Book/s</td>
+            <td>4 Deliveries per Month</td>
+            <td><select class="multiplier" onchange="calculateResult(this)">
+                    <option value="1">1 Month</option>
+                    <option value="3">3 Months</option>
+                </select>
+            </td>
+            <td>INR 800.00</td>
+            <td>INR 1000.00</td>
+            <td>Subscribe</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2D-2T2B</td>
+            <td>2 Toy/s</td>
+            <td>2 Book/s</td>
+            <td>2 Deliveries per Month</td>
+            <td>Dropdown</td>
+            <td>INR 600.00</td>
+            <td>INR 1000.00</td>
+            <td>Subscribe</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>1D-4T0B</td>
+            <td>4 Toy/s</td>
+            <td>0 Book/s</td>
+            <td>1 Deliveries per Month</td>
+            <td>Dropdown</td>
+            <td>INR 600.00</td>
+            <td>INR 1000.00</td>
+            <td>Subscribe</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>1D-4T4B</td>
+            <td>4 Toy/s</td>
+            <td>4 Book/s</td>
+            <td>1 Deliveries per Month</td>
+            <td>Dropdown</td>
+            <td>INR 800.00</td>
+            <td>INR 1200.00</td>
+            <td>Subscribe</td>
+        </tr>
+        
+    </table>
+</div>
+
+{% endblock content %}
