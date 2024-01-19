@@ -17,4 +17,7 @@ def membership_plans(request):
 def t_and_c(request):
     return render(request,'library/termsAndConditions.html')
 
+def login(request):
+    return render(request,'library/login.html')
+
 
