@@ -169,5 +169,40 @@
         border-radius: 9px;
     }
 
+    .login-box {
+        background-color: rgb(239, 245, 245);
+        padding: 35px;
+        width: 500px;
+        margin-top: 20px;
+        margin-left: 30px;
+        border-radius: 5px;
+    }
 
+    .login-info {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(239, 245, 245);
+        width: 25%;
+        padding: 35px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
 
+    .login-button {
+        background-color: #a83dd2;
+        color: #FFFFFF;
+        border-radius: 4px;
+        border: rgb(200, 200, 210);
+        margin-top: 20px;
+    }
+
+    .login-box label {
+        display: block;
+        margin-bottom: 5px; 
+    }
+
+    .login-box input {
+        display: block;
+        width: 100%; 
+        box-sizing: border-box; 
+    }
