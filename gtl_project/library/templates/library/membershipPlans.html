@@ -1,6 +1,32 @@
 {% extends "library/base.html" %}
 {% block content %}
 
+<script>
+    function calculateResult800(selectElement) {
+        var selectedValue = selectElement.value;
+        var row = selectElement.parentNode.parentNode;
+        var amountCell = row.cells[6];
+
+        if (selectedValue === "1") {
+            amountCell.textContent = "INR 800.00";
+        } else if (selectedValue === "3") {
+            amountCell.textContent = "INR 2200.00";
+        }
+    }
+
+    function calculateResult600(selectElement) {
+        var selectedValue = selectElement.value;
+        var row = selectElement.parentNode.parentNode;
+        var amountCell = row.cells[6];
+
+        if (selectedValue === "1") {
+            amountCell.textContent = "INR 600.00";
+        } else if (selectedValue === "3") {
+            amountCell.textContent = "INR 1600.00";
+        }
+    }
+</script>
+
 <div >
     <table>
         <tr>
@@ -20,14 +46,14 @@
             <td>1 Toy/s</td>
             <td>1 Book/s</td>
             <td>4 Deliveries per Month</td>
-            <td><select class="multiplier" onchange="calculateResult(this)">
+            <td><select class="multiplier" onchange="calculateResult800(this)">
                     <option value="1">1 Month</option>
                     <option value="3">3 Months</option>
                 </select>
             </td>
             <td>INR 800.00</td>
             <td>INR 1000.00</td>
-            <td>Subscribe</td>
+            <td><button type="button">Subscribe</button></td>
         </tr>
         <tr>
             <td>2</td>
@@ -35,10 +61,14 @@
             <td>2 Toy/s</td>
             <td>2 Book/s</td>
             <td>2 Deliveries per Month</td>
-            <td>Dropdown</td>
+            <td><select class="multiplier" onchange="calculateResult600(this)">
+                <option value="1">1 Month</option>
+                <option value="3">3 Months</option>
+                </select>
+            </td>
             <td>INR 600.00</td>
             <td>INR 1000.00</td>
-            <td>Subscribe</td>
+            <td><button type="button">Subscribe</button></td>
         </tr>
         <tr>
             <td>3</td>
@@ -46,10 +76,14 @@
             <td>4 Toy/s</td>
             <td>0 Book/s</td>
             <td>1 Deliveries per Month</td>
-            <td>Dropdown</td>
+            <td><select class="multiplier" onchange="calculateResult600(this)">
+                <option value="1">1 Month</option>
+                <option value="3">3 Months</option>
+                </select>
+            </td>
             <td>INR 600.00</td>
             <td>INR 1000.00</td>
-            <td>Subscribe</td>
+            <td><button type="button">Subscribe</button></td>
         </tr>
         <tr>
             <td>4</td>
@@ -57,13 +91,19 @@
             <td>4 Toy/s</td>
             <td>4 Book/s</td>
             <td>1 Deliveries per Month</td>
-            <td>Dropdown</td>
+            <td><select class="multiplier" onchange="calculateResult800(this)">
+                <option value="1">1 Month</option>
+                <option value="3">3 Months</option>
+                </select>
+            </td>
             <td>INR 800.00</td>
             <td>INR 1200.00</td>
-            <td>Subscribe</td>
+            <td><button type="button">Subscribe</button></td>
         </tr>
         
     </table>
 </div>
+
+
 
 {% endblock content %}
