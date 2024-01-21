@@ -7,5 +7,5 @@ urlpatterns = [
     path('contact/',views.contact_us,name="gtl-contactUs"),
     path('membership-plans/',views.membership_plans,name="gtl-membershipPlans"),
     path('terms-&-conditions/',views.t_and_c,name="gtl-t&c"),
-    path('login/',views.login,name="gtl-login")
+    path('authentication/',views.authentication,name="gtl-authentication")
 ]

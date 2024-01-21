@@ -1,0 +1,53 @@
+{% extends "library/base.html" %}
+{% block content %}
+<div class="page-layout">
+  <div class="outer-box">
+
+      <div class="tabs">
+        <button class="tab active-tab" onclick="showLogin()">Login</button>
+        <button class="tab" onclick="showSignup()">SignUp</button>
+      </div>
+
+      <div class="form-box">
+        <form id="loginForm">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <br>
+          <button class="login-button" type="submit">Login</button>
+        </form>
+
+        <form id="signupForm" class="signup-form">
+          <label for="newUsername">New Username:</label>
+          <input type="text" id="newUsername" name="newUsername" required>
+          <br>
+          <label for="newPassword">New Password:</label>
+          <input type="password" id="newPassword" name="newPassword" required>
+          <br>
+          <button class="login-button" type="submit">Signup</button>
+        </form>
+      </div>
+
+  </div>
+</div>
+
+  <script>
+    function showLogin() {
+      document.getElementById("loginForm").style.display = "block";
+      document.getElementById("signupForm").style.display = "none";
+      document.querySelector(".tab:nth-child(1)").classList.add("active-tab");
+      document.querySelector(".tab:nth-child(2)").classList.remove("active-tab");
+    }
+
+    function showSignup() {
+      document.getElementById("loginForm").style.display = "none";
+      document.getElementById("signupForm").style.display = "block";
+      document.querySelector(".tab:nth-child(1)").classList.remove("active-tab");
+      document.querySelector(".tab:nth-child(2)").classList.add("active-tab");
+    }
+  </script>
+
+    
+{% endblock content %}
