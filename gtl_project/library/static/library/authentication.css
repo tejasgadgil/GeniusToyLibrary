@@ -1,0 +1,80 @@
+.page-layout
+{
+    display: flex;
+    justify-content: center;
+}
+  .outer-box{
+    margin-top: 30px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .tabs 
+  {
+    display: flex;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .tab 
+  {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(239, 245, 245);
+    color: #726c6c;
+    border: none;
+    outline: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  .form-box {
+    padding: 20px;
+    
+  }
+
+  .signup-form {
+    display: none;
+  }
+
+  .active-tab {
+    background-color: #ffffff;
+    color: #333333;
+    border-top: 5px solid #a83dd2;
+    outline: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+
+
+  input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #a83dd2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
