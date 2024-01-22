@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Set a background color for the body */
+}
+
+.container {
+    width: 66.6667%; 
+    margin: 20px auto; /* Add margin to all sides of the container */
+    background-color: #fff; /* Set a background color for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-radius: 8px; /* Add rounded corners to the container */
+    overflow: hidden; /* Clear the float inside the container */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; 
+}
+
+th, td {
+    border: 1px solid transparent; 
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; 
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    margin-top: 10px; /* Add some top margin to the button */
+    padding: 8px 16px;
+    background-color: #a83dd2; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #461a58;
+}
