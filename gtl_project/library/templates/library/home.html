@@ -1,4 +1,9 @@
 {% extends "library/base.html" %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'library/home.css' %}">
+{% endblock head %}
+
 {% block content %}
     <div style="background-color: #ffffff;height: 300px;"></div>
 
