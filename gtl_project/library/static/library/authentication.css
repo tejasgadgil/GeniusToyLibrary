@@ -1,9 +1,10 @@
-.page-layout
-{
-    display: flex;
-    justify-content: center;
-}
-  .outer-box{
+  .page-layout
+  {
+      display: flex;
+      justify-content: center;
+  }
+  .outer-box
+  {
     margin-top: 30px;
     width: 400px;
     text-align: center;
@@ -35,6 +36,11 @@
     border-bottom: none;
     border-left: none;
     border-right: none;
+  }
+
+  .tab:hover
+  {
+    background-color:#c8a8d5 ;
   }
 
   .form-box {
@@ -79,6 +85,7 @@
     transition: background-color 0.3s;
   }
 
-  button:focus {
-    outline: 1px dotted;
+  .active-tab:focus 
+  {
+    outline: none;
   }
