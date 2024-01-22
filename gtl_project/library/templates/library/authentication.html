@@ -1,4 +1,11 @@
 {% extends "library/base.html" %}
+{%load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'library/authentication.css' %}">
+{% endblock head %}
+
+
 {% block content %}
 <div class="page-layout">
   <div class="outer-box">

@@ -1,4 +1,10 @@
 {% extends "library/base.html" %}
+{%load static %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'library/membershipPlans.css' %}">
+{% endblock head %}
+    
 {% block content %}
 
 <script>
