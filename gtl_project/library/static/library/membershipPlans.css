@@ -48,3 +48,54 @@ button {
 button:hover {
     background-color: #461a58;
 }
+
+
+/* Container styling */
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 15px;
+    }
+
+/* Breadcrumb section styling */
+.breadcrumb-section {
+background-color: #f8f9fa; /* Light background color */
+padding: 20px 0; /* Adjust padding as needed */
+border-bottom: 1px solid #e9ecef; /* Border bottom */
+}
+
+/* Breadcrumb contents styling */
+.breadcrumb-contents {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* Breadcrumb list styling */
+.breadcrumb {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+/* Breadcrumb item styling */
+.breadcrumb-item {
+display: inline-block;
+margin-right: 5px; /* Adjust spacing between items */
+}
+
+/* Active breadcrumb item styling */
+.breadcrumb-item.active {
+color: #343a40; /* Active item text color */
+}
+
+/* Breadcrumb link styling */
+.breadcrumb-item a {
+color: #007bff; /* Link color */
+text-decoration: none;
+}
+
+/* Breadcrumb link hover styling */
+.breadcrumb-item a:hover {
+text-decoration: underline; /* Underline on hover */
+} 
