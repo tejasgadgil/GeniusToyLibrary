@@ -1,175 +1,176 @@
-    header
+header
+{
+    /* #ff63a9 */
+    width: 100%;
+    color: #4b4b4b;
+    border-bottom: 1px solid #b3b5b8;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.content 
+{
+    background-color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-logo
+{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+footer
+{
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    position:sticky;
+    display:flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+
+.header-buttons-box
+{
+    margin-right: 20px;
+    margin-left: 560px;
+    margin-top:25px;
+    justify-self: right;
+}
+
+
+.header-buttons
+{
+    margin-left: 10px;
+    background-color: transparent;
+    color: #a83dd2;
+    font-weight: bold;
+    font-size:14px;
+    border: 0ch;
+}
+.header-buttons:hover
+{
+    transition: 0.4s;
+    color:#333333;
+}
+
+/* Styling for the first navbar */
+.first-navbar {
+    background-color: #ffbad9;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.first-navbar img {
+    height: 40px; /* Adjust the height as needed */
+}
+
+.first-navbar-middle {
+    flex: 1; /* Takes up remaining space */
+    text-align: center;
+}
+.first-navbar-middle input
+{
+    border-radius: 5px;
+    width: 500px;
+    border: #b3b5b8;
+}
+
+
+.first-navbar-right
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+}
+
+.first-navbar-right a {
+    color: #a83dd2;
+    font-weight: bold; /* Adjust text color as needed */
+    margin-left: 12px; /* Add spacing between links */
+    align-self: center;
+}
+
+
+/* Styling for the second navbar */
+.second-navbar 
+{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+}
+
+
+.second-navbar-links
+{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+}
+
+.second-navbar-links a
+{
+    color: #333333;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.container
+{
+    background-color: rgb(239, 245, 245);
+    margin-top: 50px;
+}
+
+#fixed-button {
+    position: fixed;
+    bottom: 4px;
+    right: 10px;
+    z-index: 99;
+    }
+
+    .social-media-icons-box
     {
-        /* #ff63a9 */
-        width: 100%;
-        color: #4b4b4b;
-        border-bottom: 1px solid #b3b5b8;
-        display: flex;
-        flex-direction: column;
-        height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:140px;
     }
 
-    body
+    .social-media-icon 
     {
-        margin: 0px;
-        padding: 0px;
-        font-family:Arial, Helvetica, sans-serif;
+    width: 50px; /* Set the width of your container */
+    height: 50px; /* Set the height of your container */
     }
 
-    .content 
-    {
-        background-color: #ffffff;
-        overflow-x: hidden;
-        overflow-y: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header-logo
-    {
-        margin-left: 20px;
-        margin-top: 5px;
-    }
-
-    footer
-    {
-        background-color: #333333;
-        color: white;
-        padding: 10px;
-        bottom: 0;
-        width: 100%;
-        position:sticky;
-        display:flex;
-        flex-direction: column;
-        margin-top: 75px;
-    }
-
-
-    .header-buttons-box
-    {
-        margin-right: 20px;
-        margin-left: 560px;
-        margin-top:25px;
-        justify-self: right;
-    }
-
-
-    .header-buttons
-    {
-        margin-left: 10px;
-        background-color: transparent;
-        color: #a83dd2;
-        font-weight: bold;
-        font-size:14px;
-        border: 0ch;
-    }
-    .header-buttons:hover
-    {
-        transition: 0.4s;
-        color:#333333;
-    }
-
-    /* Styling for the first navbar */
-    .first-navbar {
-        background-color: #ffbad9;
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .first-navbar img {
-        height: 40px; /* Adjust the height as needed */
-    }
-
-    .first-navbar-middle {
-        flex: 1; /* Takes up remaining space */
-        text-align: center;
-    }
-    .first-navbar-middle input
-    {
-        border-radius: 5px;
-        width: 500px;
-        border: #b3b5b8;
-    }
-
-
-    .first-navbar-right
-    {
-        display: flex;
-        flex-direction: column;
-        margin-right: 16px;
-    }
-
-    .first-navbar-right a {
-        color: #a83dd2;
-        font-weight: bold; /* Adjust text color as needed */
-        margin-left: 12px; /* Add spacing between links */
-        align-self: center;
-    }
-
-
-    /* Styling for the second navbar */
-    .second-navbar 
-    {
-        background-color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex:1;
-    }
-
-    .second-navbar-links
-    {
-        display: flex;
-        justify-content: space-between;
-        width: 40%;
-        background-color: rgb(255, 255, 255);
-    }
-
-    .second-navbar-links a
-    {
-        color: #333333;
-        font-weight: 550;
-        font-size: 15px;
-    }
-
-    .container
-    {
-        background-color: rgb(239, 245, 245);
-        margin-top: 50px;
-    }
-
-    #fixed-button {
-        position: fixed;
-        bottom: 4px;
-        right: 10px;
-        z-index: 99;
-      }
-
-      .social-media-icons-box
-      {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width:140px;
-      }
-
-      .social-media-icon 
-      {
-        width: 50px; /* Set the width of your container */
-        height: 50px; /* Set the height of your container */
-      }
-    
-    .social-media-icon img 
-    {
-        max-width: 100%; 
-        height: auto;
-        display: block;
-        margin: 0; /* Clear default margin */
-        padding: 0; /* Clear default padding */
-        background-color: #ffffff;
-        border-radius: 9px;
-    }
+.social-media-icon img 
+{
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0; /* Clear default margin */
+    padding: 0; /* Clear default padding */
+    background-color: #ffffff;
+    border-radius: 9px;
+}
 
